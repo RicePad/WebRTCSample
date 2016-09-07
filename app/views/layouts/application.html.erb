@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Code4startup</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+
+      <%= render 'layouts/navigation' %>
+      <%= render 'shared/message' %>
+
+      <main>
+        <div class="container">
+          <%= yield %>
+        </div>
+      </main>
+
+      <%= render 'shared/footer' %>
+
+    </body>
+
+        <script>
+           $(".button-collapse").sideNav();
+           $(".dropdown-button").dropdown();
+
+        </script>
+
+
+
+    </html>
